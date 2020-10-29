@@ -1,0 +1,276 @@
+@import "libs";
+@import "icons-fonts";
+@import "fonts";
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    display: inline;
+}
+
+.container{
+    max-width: 1224px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+// ----------header-----------
+
+.header{
+    background-color: #2C2C2C;
+    height: 40px;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link{
+    ul {
+        margin-top: 7px;
+        width: 850px;
+        display: flex;
+        li+li{
+            padding-left: 25px;
+        }
+    }
+    a{
+        font-size: 16px;
+		line-height: 24px;
+		font-family: 'Gilroy-Medium';
+		
+    }
+}
+
+.header__item{
+    display: flex;
+	margin-top: 7px;
+	font-family: 'Gilroy-Medium';
+}
+.header__item-cabinet{
+    padding-right: 18px;
+    position: relative;
+    a{
+        position: relative;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 32px;
+        &:before{
+            position: absolute;
+            content: url(../img/cabinet.png);
+            left: 0px;
+            top: 0px;
+        }
+    }
+    &:after{
+        position: absolute;
+        height: 23px;
+        width: 1px;
+        content: "";
+        background-color: grey;
+        right: 0px;
+        top: 2px;
+        
+    }
+}
+.header__item-cart{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    a{
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        padding-left: 29px;
+        &:before{
+            position: absolute;
+            content: url(../img/shopping-cart.png);
+            top: 0;
+            left: 0px;
+        }
+    }
+    &:after{
+        position: absolute;
+        height: 23px;
+        width: 1px;
+        content: "";
+        background-color: grey;
+        right: 0px;
+        top: 2px;
+    }
+}
+.header__item-language{
+    margin-left: 20px;
+    a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+// -------------top--------------
+
+.top{
+    background-color: #00AD79;
+    // height: 185px;
+}
+
+.top__wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 18px;
+	padding-bottom: 64px;
+}
+
+.top__logo{
+	padding-top: 10px;
+}
+
+.top__item{
+	margin-left: -40px;
+}
+
+.top__item-help,
+.top__item-consultation{
+	font-size: 14px;
+	line-height: 17px;
+    font-weight: 16px;
+	font-weight: 500;
+    a{
+		color: #000;
+		font-family: 'Gilroy-Medium';
+    }
+}
+
+.top__item-consultation{
+    a{
+		border-bottom: 1px solid #000;
+    }
+}
+
+.top__item-number-1,
+.top__item-number-2,
+.top__item-mail{
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 700;
+	font-family: 'Gilroy-Bold';
+    a{
+		color: #000;  
+    }
+}
+
+.top__item-number-1{
+	padding-top: 11px;
+}
+
+.top__item-number-2{
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+
+.top__inner{
+	margin-top: 12px;
+}
+
+
+.top__inner-text{
+	font-size: 14px;
+	line-height: 21px;
+	color: #000;
+	font-family: 'Gilroy-Bold';
+}
+
+.top__search{
+	margin-top: 8px;
+}
+
+
+.btn-categories{
+	height: 57px;
+	background-color: #fff;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Gilroy-Regular';
+	padding-left: 16px;
+	padding-right: 36px;
+	position: relative;
+	&:after{
+		position: absolute;
+		content: url(./../img/caret-down.png);
+		right: 14px;
+		top: 17px;
+	}
+	&:before{
+		position: absolute;
+        height: 26px;
+        width: 1px;
+        content: "";
+        background-color: #DFDFDF;
+        right: 0px;
+        top: 15px;
+	}
+	
+}
+
+.top__search input{
+	height: 57px;
+	width: 406px;
+	border: none;
+	margin-left: -4px;
+	margin-right: -4px;
+	position: relative;
+	
+}
+
+.btn-search{
+	height: 57px;
+	width: 162px;
+	background-color: #2C2C2C;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	font-family: 'Gilroy-Regular';
+	padding-left: 73px;
+	padding-right: 43px;
+	position: relative;
+	&:before{
+		position: absolute;
+		content: url(./../img/search.png);
+		left: 33px;
+		top: 18px;
+	}
+}
+
+
+
+
+@import "media";
